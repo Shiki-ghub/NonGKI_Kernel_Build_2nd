@@ -9,8 +9,8 @@ env:
   DEVICE_NAME : "poco_f1"
   DEVICE_CODENAME : "beryllium"
 
-  CUSTOM_CMDS : "CLANG_TRIPLE=aarch64-linux-gnu-"
-  EXTRA_CMDS : "LLVM=1 LLVM_IAS=1"
+  CUSTOM_CMDS : "CROSS_COMPILE=aarch64-linux-gnu-"
+  EXTRA_CMDS : "CROSS_COMPILE_ARM32=arm-linux-gnueabi-"
 
   KERNEL_SOURCE : "https://github.com/donboruza/NGK_android_kernel_xiaomi_sdm845.git"
   KERNEL_BRANCH : "thirteen"
@@ -19,10 +19,10 @@ env:
   CLANG_BRANCH : "master"
 
   GCC_GNU : false
-  GCC_64_SOURCE : "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9.git"
-  GCC_64_BRANCH : "android12L-release"
-  GCC_32_SOURCE : "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9.git"
-  GCC_32_BRANCH : "android12L-release"
+  GCC_64_SOURCE : "https://github.com/kdrag0n/proton-clang.git"
+  GCC_64_BRANCH : "master"
+  GCC_32_SOURCE : "https://github.com/kdrag0n/proton-clang.git"
+  GCC_32_BRANCH : "master"
 
   DEFCONFIG_SOURCE: ""
   DEFCONFIG_NAME : "nogravity_defconfig"
