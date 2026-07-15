@@ -19,10 +19,10 @@ env:
   CLANG_BRANCH : "master"
 
   GCC_GNU : false
-  GCC_64_SOURCE : "https://github.com/kdrag0n/proton-clang.git"
-  GCC_64_BRANCH : "master"
-  GCC_32_SOURCE : "https://github.com/kdrag0n/proton-clang.git"
-  GCC_32_BRANCH : "master"
+  GCC_64_SOURCE : ""
+  GCC_64_BRANCH : ""
+  GCC_32_SOURCE : ""
+  GCC_32_BRANCH : ""
 
   DEFCONFIG_SOURCE: ""
   DEFCONFIG_NAME : "nogravity_defconfig"
