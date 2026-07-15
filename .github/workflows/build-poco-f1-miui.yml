@@ -9,8 +9,8 @@ env:
   DEVICE_NAME : "poco_f1"
   DEVICE_CODENAME : "beryllium"
 
-  CUSTOM_CMDS : "CROSS_COMPILE=aarch64-linux-gnu-"
-  EXTRA_CMDS : "CROSS_COMPILE_ARM32=arm-linux-gnueabi-"
+  CUSTOM_CMDS : ""
+  EXTRA_CMDS : "LD=ld.lld LLVM=1 LLVM_IAS=1"
 
   KERNEL_SOURCE : "https://github.com/donboruza/NGK_android_kernel_xiaomi_sdm845.git"
   KERNEL_BRANCH : "thirteen"
